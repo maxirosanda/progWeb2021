@@ -1,0 +1,15 @@
+.maxi {
+    background-color: aqua;
+    width: 50%;
+    height: 400px;
+}
+
+.flecha{
+    background-color: darkslateblue;
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+}
+.perro{
+    width: 40%;
+}
