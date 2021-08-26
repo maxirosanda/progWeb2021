@@ -1,0 +1,10 @@
+.maxi{
+    background-color: #b33c3c; /* color de fondo */
+    height: 100px; /*altura (no es obligatorio) */
+    margin: 20px; /*todos los margenes */
+    margin-top: 50px; /* solo margen superior*/
+    margin-bottom: 50px; /*solo margen inferior*/
+}
+.maxi2{
+    font-size: 30px;
+}
