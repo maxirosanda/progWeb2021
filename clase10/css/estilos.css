@@ -1,0 +1,26 @@
+.color1{
+    color: #054628 ;
+}
+
+.altura{
+    height: 1000px;
+}
+.bcolor1{
+    background-color: #054628;
+}
+.text-footer{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 23px;
+    letter-spacing: -1.6px;
+    word-spacing: 0.4px;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+.contendor-borde{
+    border-top: 14px solid #054628;
+}

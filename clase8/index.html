@@ -1,0 +1,144 @@
+<!--   
+         1) 
+            a)justify-content-around => "acomodar contenido 
+            separado proporcionalmente"
+            b)justify-content-start =>"acomoda todo al principio"
+            c)justify-content-center =>"centra el contenido"
+            d)justify-content-end =>"contenido en el final"
+         2) row => fila
+         3) col-xx => valores de columnas entre 1 y 12
+         4) mt-x => valor para margen superior entre 1 y 5
+         5) mb-x => valor para margen inferior entre 1 y 5
+         6) <img src="..." class="img-fluid" alt="...">
+         Propiedades de texto
+         7)Alineaciones
+            a)text-start => (texto al inicio de la hoja)
+            b)text-center =>(texto en el centro )
+            c)text-end =>(texto en el final)
+        8) 
+            <p class="text-lowercase">Lowercased text.</p>
+            <p class="text-uppercase">Uppercased text.</p>
+            <p class="text-capitalize">CapiTaliZed text.</p>
+        9)fs-x (va del 1 al 6) => tamaño de  letra
+        10)
+            <p class="fw-bold">Bold text.</p>
+            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+            <p class="fw-normal">Normal weight text.</p>
+            < p class="fw-light">Light weight text.</p>
+            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+            <p class="fst-italic">Italic text.</p>
+            <p class="fst-normal">Text with normal font style</p>
+            11) 
+                <p class="text-decoration-underline">This text has a line underneath it.</p>
+                <p class="text-decoration-line-through">This text has a line going through it.</p>
+-->
+<html>
+    <head>
+        <link rel="shortcut icon" href="./img/">
+        <title>CFL 414 La Matanza</title>  
+        <meta  charset="utf-8">
+        <meta name="description" content="aca va la descripcion">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, ,maximun-scale=1.0, minimum-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body class="container-fluid">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://www.google.com.ar">maxi</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ubicacion.html">Ubicacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./maxi.html">maxi</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+       
+          <header>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/perro1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/perro2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/perro3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/perro4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </header>
+        <main>
+
+            <div class="row mt-3 justify-content-around ">
+                <div class="col-6 card mb-1 " style="width: 18rem;">
+                    <img src="./img/perro1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card mb-1 col-3" style="width: 18rem;">
+                    <img src="./img/perro1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card mb-1 col-3" style="width: 18rem;">
+                    <img src="./img/perro1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="row justify-content-around mt-3">
+                <div class="col-3">
+                    <img src="./img/perro1.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis dui vel nisl tincidunt consectetur. Nulla a nisi justo. Vivamus dapibus venenatis elit vitae sollicitudin. Quisque ut tincidunt velit, sit amet malesuada elit. In hac habitasse platea dictumst. Aenean in ex porttitor, scelerisque elit non, varius sem. Maecenas vehicula leo ut orci vulputate suscipit. Donec tempor mattis odio, quis accumsan tellus ultrices egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sed mauris non lacus posuere consequat.</p>
+                </div>
+
+
+            </div>
+
+        </main>
+
+        <footer>
+    
+    
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    </body>
+
+</html>
