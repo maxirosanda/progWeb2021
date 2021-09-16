@@ -2,9 +2,6 @@
     color: #054628 ;
 }
 
-.altura{
-    height: 1000px;
-}
 .bcolor1{
     background-color: #054628;
 }
@@ -23,4 +20,25 @@
 
 .contendor-borde{
     border-top: 14px solid #054628;
+}
+.parrafo{
+    border-radius: 14px 14px 14px 14px;
+    background-color: blue;
+    color:#ffffff;
+}
+.parrafo:hover{
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+.bordes{
+    border: 4px;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.52); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.52);
+}
+.bordes:hover{
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;   
+}
+.texto2:hover{
+    color: #054628;
 }

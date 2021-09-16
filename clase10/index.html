@@ -1,48 +1,8 @@
-<!--   
-         1) 
-            a)justify-content-around => "acomodar contenido 
-            separado proporcionalmente"
-            b)justify-content-start =>"acomoda todo al principio"
-            c)justify-content-center =>"centra el contenido"
-            d)justify-content-end =>"contenido en el final"
-         2) row => fila
-         3) col-xx => valores de columnas entre 1 y 12
-         4) mt-x => valor para margen superior entre 1 y 5
-         5) mb-x => valor para margen inferior entre 1 y 5
-         6) <img src="..." class="img-fluid" alt="...">
-         Propiedades de texto
-         7)Alineaciones
-            a)text-start => (texto al inicio de la hoja)
-            b)text-center =>(texto en el centro )
-            c)text-end =>(texto en el final)
-        8) 
-            <p class="text-lowercase">Lowercased text.</p>
-            <p class="text-uppercase">Uppercased text.</p>
-            <p class="text-capitalize">CapiTaliZed text.</p>
-        9)fs-x (va del 1 al 6) => tamaño de  letra
-        10)
-            <p class="fw-bold">Bold text.</p>
-            <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
-            <p class="fw-normal">Normal weight text.</p>
-            < p class="fw-light">Light weight text.</p>
-            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
-            <p class="fst-italic">Italic text.</p>
-            <p class="fst-normal">Text with normal font style</p>
-            11) 
-                <p class="text-decoration-underline">This text has a line underneath it.</p>
-                <p class="text-decoration-line-through">This text has a line going through it.</p>
--->
 
-<!-- 
-    9cffd
-    b6efd49
-
-    a0ccda
--->
 <html>
     <head>
-        <link rel="shortcut icon" href="./img/">
-        <title>>Gatos Home</title>  
+        <link rel="shortcut icon" href="./img/gato1.jpg">
+        <title>Gatos Home</title>  
         <meta  charset="utf-8">
         <meta name="description" content="aca va la descripcion">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, ,maximun-scale=1.0, minimum-scale=1.0">
@@ -121,20 +81,39 @@
         </header>
         <main class="altura" >
 
+            <div class="row mt-5 mb-4 justify-content-around align-items-center">
+                <div class="col-11 col-md-4 mb-3 d-lg-none"> <img src="./img/gato1-liviana.jpg" class="img-fluid" alt="..."></div>
+                <div class="col-11 col-md-6"><p  class="texto2">Aliquam in augue mauris. Fusce in pharetra lacus, non gravida nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam id ex ac ante maximus mattis ut id nulla. Morbi rhoncus enim urna. Etiam vitae feugiat eros. In ligula nisl, posuere quis tincidunt mattis, suscipit sed lorem. Integer leo urna, finibus et placerat nec, iaculis id sapien. Donec accumsan nulla ipsum, nec rhoncus purus semper in. Morbi porttitor lectus laoreet suscipit malesuada.</p></div>
+            </div>
             <div class="row mt-5 justify-content-around">
-                <div class="col-4"> <img src="./img/gato1-liviana.jpg" class="img-fluid" alt="..."></div>
-                <div class="col-6"><p>Aliquam in augue mauris. Fusce in pharetra lacus, non gravida nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam id ex ac ante maximus mattis ut id nulla. Morbi rhoncus enim urna. Etiam vitae feugiat eros. In ligula nisl, posuere quis tincidunt mattis, suscipit sed lorem. Integer leo urna, finibus et placerat nec, iaculis id sapien. Donec accumsan nulla ipsum, nec rhoncus purus semper in. Morbi porttitor lectus laoreet suscipit malesuada.</p></div>
+                <div class="col-xl-3 col-md-5 col-11 mb-4 bordes row justify-content-around ">
+                    <img src="./img/adopcion/gato1.jpg" class="img-fluid m-2 " alt="...">
+                    <p class="mt-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempor diam lorem, nec tincidunt ex ultrices consequat. Nam quis leo a ante mattis hendrerit eu ut tortor. Duis aliquam dui scelerisque convallis viverra. Phasellus eros ligula, eleifend et sem id, convallis convallis purus. Aliquam erat volutpat. Suspendisse interdum libero eget mauris molestie, sit amet porta lacus feugiat. Integer dui ante, ultrices ut tellus a, fringilla congue massa. Nulla facilisi. Vestibulum ante quam, lacinia quis molestie id, tempor et nisl. Ut ut ex ut ante pharetra accumsan eu dapibus tortor. Donec ut accumsan massa.</p>
+                </div>
+                <div class="col-xl-3 col-md-5 col-11 mb-4 bordes">
+                  <img src="./img/adopcion/gato2.jpeg" class="img-fluid m-2" alt="...">
+                  <p>Integer suscipit, nunc vitae porttitor euismod, orci purus mattis odio, vel pulvinar enim ipsum a lorem. Sed eleifend libero metus, ac dignissim nisl pharetra vitae. Nam iaculis dictum nulla et feugiat. Morbi fermentum, nunc quis viverra euismod, nulla eros tristique magna, eget sollicitudin ipsum sapien congue nunc. Ut in orci ipsum. Duis tristique maximus sem. Integer tempus pulvinar nisl, quis efficitur odio maximus nec. Nam non convallis leo. Nullam gravida venenatis imperdiet. Cras sodales sollicitudin elementum.</p>
+
+                </div>
+                <div class="col-xl-3 col-md-5 col-11 mb-4 bordes d-none d-md-block">
+                  <iframe width="250" height="140" class="m-2" src="https://www.youtube.com/embed/ZIbuB179CJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p>Integer suscipit, nunc vitae porttitor euismod, orci purus mattis odio, vel pulvinar enim ipsum a lorem. Sed eleifend libero metus, ac dignissim nisl pharetra vitae. Nam iaculis dictum nulla et feugiat. Morbi fermentum, nunc quis viverra euismod, nulla eros tristique magna, eget sollicitudin ipsum sapien congue nunc. Ut in orci ipsum. Duis tristique maximus sem. Integer tempus pulvinar nisl, quis efficitur odio maximus nec. Nam non convallis leo. Nullam gravida venenatis imperdiet. Cras sodales sollicitudin elementum.</p>
+                </div>
+
             </div>
 
 
         </main>
 
+
+
+
         <footer>
             <div class="row justify-content-around contendor-borde">
-                <div class="col-5 p-5">
+                <div class="col-11 col-md-5 p-5">
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et aliquet turpis, suscipit vulputate enim. Proin euismod, tellus eget lobortis consequat, nisi mauris accumsan lectus, vel tincidunt ex elit ac nulla. Curabitur fermentum feugiat sapien, id blandit orci dignissim eget. Donec quis viverra ex. Donec porttitor tempor massa malesuada aliquet.</p>
                 </div>
-                <div class="col-5 p-5">
+                <div class="col-11  col-md-5 p-5">
                     <p>Proin sed lacus eu elit molestie rutrum. Maecenas neque tortor, luctus in ultrices eu, semper sed ex. Sed malesuada arcu augue, a mollis enim luctus et. In a nunc felis. Nulla lobortis, erat in efficitur auctor, nisl velit semper lorem, in bibendum neque lorem placerat turpis. Mauris at vestibulum ligula.</p>
                 </div>
             </div>
@@ -146,8 +125,7 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+       
     </body>
 
 </html>
