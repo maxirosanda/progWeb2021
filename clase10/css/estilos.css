@@ -42,3 +42,68 @@
 .texto2:hover{
     color: #054628;
 }
+
+.slide-top:hover {
+	    animation: slide-top 2s cubic-bezier(0.680, -0.550, 0.265, 1.550) 1s 2 reverse ;
+}
+
+  @keyframes slide-top {
+    0% {
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+
+
+  .giromaxi:hover {
+	animation: rotar 0.6s cubic-bezier(0.950, 0.050, 0.795, 0.035);
+}
+
+@keyframes rotar {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .maximostrar{
+      display: block;
+  }
+
+  .maximostrar:hover{
+    animation: mostrar 0.6s cubic-bezier(0.950, 0.050, 0.795, 0.035) both;
+}
+
+  @keyframes mostrar {
+    0% {
+      display: block;
+    }
+    100% {
+      display: none;
+    }
+  }
+
+  .swing-top-fwd:hover {
+	animation: swing-top-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes swing-top-fwd {
+    0% {
+    background-color: #ffffff;
+    color:#000000
+    }
+    100%{
+        background-color: #21e652;
+        color:#ffffff
+    }
+  }
+
+
+
+  
+  
