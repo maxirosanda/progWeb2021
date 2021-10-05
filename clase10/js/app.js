@@ -1,6 +1,5 @@
 /*Trabajo js 1 */
 
-import { calculadora } from "./calculadora"
 
 /*
 console.log("hola mundo")
@@ -112,7 +111,24 @@ console.log("ya termino el ciclo")
 */
 
 
-
+ const calculadora = (num1,num2,opera) => {
+    let resultado = 0
+        if(opera =="sum"){
+            resultado = num1 + num2
+          }
+          if(opera=="rest"){
+               resultado =num1 -num2
+          }
+          
+          if(opera=="divi"){
+              resultado = num1/num2
+          }
+          
+          if(opera=="multi"){
+              resultado = num1 * num2
+          }
+        return resultado
+    }
 let num1 = 78
 let num2 = 25
 let opera ="sum"
