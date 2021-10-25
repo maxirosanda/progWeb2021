@@ -13,7 +13,8 @@ $(document).ready(function(){
 let valor = $("#acaVaElIdDelInput").val()
 
 //se utiliza para pasar un valor en string a int (pasar de texto a entero)
-valor = parseInt(valor1)
+valor1 = parseInt(valor1)
+valor2 = parseFloat(valor2)
 
 //se utiliza para cambiar el texto de una etiqueta html (h1,h2,h3,h4,h5,h6,p)
 $("#acaVaElIdDeLaEtiquetaHTMLdeTexto").text("contenidoACambiar")
