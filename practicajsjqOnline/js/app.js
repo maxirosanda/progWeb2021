@@ -12,16 +12,7 @@ $(document).ready(() => {
     }
        
     
-   $("#enviarEntrada").click(() => {
-    
-
-
-    $("#contenedor").append("<h3>esto esta agregado</h3>")
-
-   
-
-
-})
+   $("#enviarEntrada").hover(() => {$("#foto").attr("src","./img/foto2.jpg")},()=>{$("#foto").attr("src","./img/foto1.jpg")})
 })
 
 /*

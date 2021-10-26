@@ -1,5 +1,16 @@
 {{> navbar }}
+<div class="row">
 {{#each products}}
-<h1>Producto : {{title}}</h1>
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{title}}</h5>
+    <h5>{{price}}</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="#" class="btn btn-primary">Comprar</a>
+  </div>
+</div>
 
 {{/each}}
+</div>
