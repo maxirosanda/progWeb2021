@@ -4,7 +4,7 @@ import handlebars  from "express-handlebars"
 import path from 'path'
 import methodOverride from 'method-override'
 import  config from './config/config.js'
-import { routerProducts } from "./src/routes/index.js"
+import  routerProducts  from "./src/routes/routesProducts.js"
 
 
 const app = express()
