@@ -1,3 +1,4 @@
+// instalar nodejs 
 //Crear la carpeta del proyecto y abrirla con visual studio code
 //ejecutar el comando => npm init -y (se creara el archivo package.json)
 // Crear la carpetas public y src en la raiz
@@ -7,7 +8,7 @@
 //crear los archivos server.js y .gitignore en la raiz del proyecto
 // dentro de src/controllers crear el archivo controllerProducts.js
 // dentro de src/routes crear el archivo routesProducts.js
-//dentro de src/views/layouts/index.hbs
+//dentro de src/views/layouts crear el archivo index.hbs
 //dentro del archivo src/views/layouts/index.hbs agregar el HTML base que nos proporciona bootstrap
 
 //dentro del archivo server.js -------------------------------------------------------------
@@ -45,8 +46,8 @@ app.set('view engine', 'hbs');
 
 // servidor
 
-app.listen(config.PORT, () => {
-    console.log(`Example app listening at http://localhost:${config.PORT}`)
+app.listen(3000, () => {
+    console.log(`el servidor esta corriendo en http://localhost:${3000}`)
   })
 
 */
@@ -58,7 +59,7 @@ app.listen(config.PORT, () => {
 /*
 const routesProducts = app => {
 
-    app.get('/products',controllerProducts.read)
+    app.get('/products',controllerProducts.nombreFuncion)
 
 }
 export default routesProducts
@@ -72,7 +73,7 @@ export default routesProducts
 
 export const nombreFuncion = async (req,res)=>{
   
-  res.status(200).render('nombre_pagina_hbs',)
+  res.status(200).render('nombre_pagina_hbs')
 
 }
 
