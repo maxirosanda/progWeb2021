@@ -1,0 +1,21 @@
+{{> nav }}
+<h1>Productos</h1>
+<form action="/productos" method="post">
+    <input placeholder="Ingresar Nombre" name="name" >
+    <input placeholder="Ingregar Precio" type="number" name="price">
+    <input placeholder="Ingresar Stock" type="number" name="stock"  >
+    <button type="submit" >Crear Producto</button>
+</form>
+<div class="row">
+{{#each productosparaver}}
+<div class="card m-3" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">El precio del producto es {{price}} y tiene un stock de : {{stock}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+{{/each}}
+</div>

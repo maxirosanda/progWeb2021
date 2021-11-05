@@ -3,7 +3,8 @@ import * as controllerProducts from '../controllers/controllerProducts.js'
 
 const routesProducts = (app) => {
 
-    app.get('/products',controllerProducts.nombreFuncion)
+    app.get('/productos',controllerProducts.view)
+    app.post('/productos',controllerProducts.create)
 
 }
 export default routesProducts
