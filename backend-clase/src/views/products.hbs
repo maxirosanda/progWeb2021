@@ -6,14 +6,27 @@
     <input placeholder="Ingresar Stock" type="number" name="stock"  >
     <button type="submit" >Crear Producto</button>
 </form>
+
 <div class="row">
 {{#each productosparaver}}
 <div class="card m-3" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{name}}</h5>
-    <p class="card-text">El precio del producto es {{price}} y tiene un stock de : {{stock}}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+      <form action="/productos?_method=PUT" method="post">
+        <input type="hidden" name="id" value={{id}}>
+        <h6>Nombre:</h6>
+        <input name="name" placeholder={{name}}>
+        <h6>Precio:</h6>
+        <input name="price" placeholder={{price}}>
+        <h6>Stock:</h6>
+        <input name="stock" placeholder={{stock}}>
+        <button type="submit">Actualizar</button>
+      </form>
+
+      <form action="/productos?_method=delete" method="post" >
+       <input type="hidden"  name="id"  value={{id}}>
+        <button type="submit">Borrar</button>
+      </form>
   </div>
 </div>
 

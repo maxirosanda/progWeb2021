@@ -3,13 +3,15 @@ import morgan from 'morgan'
 import handlebars  from "express-handlebars"
 import path from 'path'
 import routesProducts from './src/routes/routesProducts.js'
-
+import methodOverride from 'method-override'
 
 
 const app = express()
 
 
 const __dirname = path.resolve();
+
+app.use(methodOverride('_method'))
 
 app.use(morgan('dev'))
 
@@ -34,6 +36,6 @@ app.set('view engine', 'hbs');
 
 // servidor
 routesProducts(app)
-app.listen(3000, () => {
-    console.log(`el servidor esta corriendo en : http://localhost:${3000}`)
+app.listen(8080, () => {
+    console.log(`el servidor esta corriendo en : http://localhost:${8080}`)
   })
