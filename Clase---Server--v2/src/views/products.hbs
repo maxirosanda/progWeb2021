@@ -1,0 +1,29 @@
+{{>nav}}
+
+<h1>Lista de Productos: Mercado Online</h1>
+
+<form action="/productos" method="post">
+    <input placeholder="Ingresar Nombre" type="text" name="Nombre">
+    <input placeholder="Ingresar Precio" type="number" name="Precio">
+    <input placeholder="Ingresar Stock" type="number" name="Stock">
+    <button type="submit">Crear Producto</button>
+
+</form>
+
+{{#each listadoProductos}}
+<h6></h6>
+
+
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{Nombre}}</h5>
+    <h6>{{Precio}}</h6>
+    <h6>{{Stock}}</h6>
+  </div>
+</div>
+
+
+
+{{/each}}

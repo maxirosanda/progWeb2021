@@ -1,0 +1,34 @@
+{{> nav }}
+<h1>Productos</h1>
+<form action="editproductos" method="post">
+    <input placeholder="Ingresar Nombre" name="name" >
+    <input placeholder="Ingregar Precio" type="number" name="price">
+    <input placeholder="Ingresar Stock" type="number" name="stock"  >
+    <button type="submit" >Crear Producto</button>
+</form>
+
+<div class="row">
+{{#each productosparaver}}
+<div class="card m-3" style="width: 18rem;">
+  <img src="./img/auto.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+      <form action="/editproductos?_method=PUT" method="post">
+        <input type="hidden" name="id" value={{id}}>
+        <h6>Nombre:</h6>
+        <input name="name" placeholder={{name}}>
+        <h6>Precio:</h6>
+        <input name="price" placeholder={{price}}>
+        <h6>Stock:</h6>
+        <input name="stock" placeholder={{stock}}>
+        <button type="submit">Actualizar</button>
+      </form>
+
+      <form action="/editproductos?_method=delete" method="post" >
+       <input type="hidden"  name="id"  value={{id}}>
+        <button type="submit">Borrar</button>
+      </form>
+  </div>
+</div>
+
+{{/each}}
+</div>

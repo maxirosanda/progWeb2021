@@ -1,34 +1,13 @@
-{{> nav }}
-<h1>Productos</h1>
-<form action="/productos" method="post">
-    <input placeholder="Ingresar Nombre" name="name" >
-    <input placeholder="Ingregar Precio" type="number" name="price">
-    <input placeholder="Ingresar Stock" type="number" name="stock"  >
-    <button type="submit" >Crear Producto</button>
-</form>
-
-<div class="row">
-{{#each productosparaver}}
-<div class="card m-3" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-      <form action="/productos?_method=PUT" method="post">
-        <input type="hidden" name="id" value={{id}}>
-        <h6>Nombre:</h6>
-        <input name="name" placeholder={{name}}>
-        <h6>Precio:</h6>
-        <input name="price" placeholder={{price}}>
-        <h6>Stock:</h6>
-        <input name="stock" placeholder={{stock}}>
-        <button type="submit">Actualizar</button>
-      </form>
-
-      <form action="/productos?_method=delete" method="post" >
-       <input type="hidden"  name="id"  value={{id}}>
-        <button type="submit">Borrar</button>
-      </form>
-  </div>
-</div>
-
-{{/each}}
-</div>
+ <h1>Hello, world!</h1>
+    <div class="row justify-content-around">
+        {{#each products}}
+        <div class="card" style="width: 18rem;">
+            <img src="./img/auto.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{name}}</h5>
+              <p class="card-text">el precio del producto es: {{price}} $ y tiene un stock de: {{stock}}</p>
+              <a href="#" class="btn btn-primary">Comprar</a>
+            </div>
+          </div>
+       {{/each}}
+    </div>
