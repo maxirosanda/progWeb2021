@@ -1,0 +1,13 @@
+{{> nav }}
+<h1>este es el carrito</h1>
+
+{{#each carts}}
+<h2>{{name}}</h2>
+<h2>{{price}}</h2>
+<h2>{{cantidad}}</h2>
+<form action="/carrito?_method=delete" method="post">
+    <input type="hidden" name="id" value={{id}}>
+    <button type="submit">Sacar del carrito</button>
+</form>
+
+{{/each}}

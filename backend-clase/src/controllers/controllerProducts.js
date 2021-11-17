@@ -16,8 +16,7 @@ export const view = (req,res)=>{
   export const create = (req,res)=>{
     let product = req.body
     product.id = Math.floor(Math.random()*10000000000)
-    products.push(req.body)
-    console.log(products)
+    products.push(product)
     res.status(200).redirect('/editproductos')
 
   
