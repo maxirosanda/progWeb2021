@@ -3,7 +3,7 @@
     <div class="row justify-content-around">
         {{#each products}}
         <div class="card " style="width: 18rem;">
-            <img src="./img/auto.jpg" class="card-img-top" alt="...">
+            <img src="./img/products/{{url}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{name}}</h5>
               <p class="card-text">el precio del producto es: {{price}} $ y tiene un stock de: {{stock}}</p>
@@ -11,7 +11,8 @@
                 <input type="hidden" name="id" value={{id}}>
                 <input type="hidden" name="name" value={{name}}>
                 <input type="hidden" name="price" value={{price}}>
-                <input type="number" name="cantidad" max={{stock}}>
+                <input type="hidden" name="url" value={{url}}>
+                <input type="number" name="cantidad" min="1" max={{stock}}>
                 <button type="submit">Agregar al carrito</button>
               </form>
             </div>

@@ -1,25 +1,27 @@
 {{> nav }}
 <h1>Productos</h1>
-<form action="editproductos" method="post">
-    <input placeholder="Ingresar Nombre" name="name" type="text" >
-    <input placeholder="Ingregar Precio" type="number" name="price">
-    <input placeholder="Ingresar Stock" type="number" name="stock"  >
+<form action="editproductos" method="post" enctype="multipart/form-data">
+    <input placeholder="Ingresar Nombre" name="name" type="text" required  >
+    <input placeholder="Ingregar Precio" type="number" name="price" required>
+    <input placeholder="Ingresar Stock" min="1" type="number" name="stock" required  >
+    <input type="file" name="url" accept="image/x-png,image/gif,image/jpeg" required>
     <button type="submit" >Crear Producto</button>
 </form>
 
 <div class="row">
 {{#each productosparaver}}
 <div class="card m-3" style="width: 18rem;">
-  <img src="./img/auto.jpg" class="card-img-top" alt="...">
+  <img src="./img/products/{{url}}" class="card-img-top" alt="...">
   <div class="card-body">
-      <form action="/editproductos?_method=PUT" method="post">
+      <form action="/editproductos?_method=PUT" method="post"  enctype="multipart/form-data">
         <input type="hidden" name="id" value={{id}}>
         <h6>Nombre:</h6>
-        <input name="name" placeholder={{name}} type="text">
+        <input name="name"  placeholder={{name}} type="text">
         <h6>Precio:</h6>
-        <input name="price" placeholder={{price}}>
+        <input name="price" type="number" placeholder={{price}}>
         <h6>Stock:</h6>
-        <input name="stock" placeholder={{stock}}>
+        <input name="stock" type="number" min="1" placeholder={{stock}}>
+         <input type="file" name="url" accept="image/x-png,image/gif,image/jpeg">
         <button type="submit">Actualizar</button>
       </form>
 

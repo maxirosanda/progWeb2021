@@ -1,13 +1,14 @@
 {{> nav }}
-<h1>este es el carrito</h1>
-
+<h2 class="mb-4">Mi Carrito</h2>
 {{#each carts}}
-<h2>{{name}}</h2>
-<h2>{{price}}</h2>
-<h2>{{cantidad}}</h2>
+<div class="row mb-4">
+<div class="col-1"><img src="./img/products/{{url}}" class="img-fluid" alt="..."></div>
+<div class="col-5">
+<h6><b>Nombre Producto :</b> {{name}}   <b>Precio:</b> {{price}}  <b>Cantidad:</b> {{cantidad}}</h6>
 <form action="/carrito?_method=delete" method="post">
     <input type="hidden" name="id" value={{id}}>
     <button type="submit">Sacar del carrito</button>
 </form>
-
+</div>
+</div>
 {{/each}}

@@ -6,6 +6,7 @@ export const viewcart = (req,res)=>{
   res.status(200).render('cart',{carts:carts})
   
 
+  
 }
 
 export const add = (req,res)=>{

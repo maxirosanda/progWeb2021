@@ -4,7 +4,7 @@
 // e intalar con npm i express-fileupload
 
 //2
-//agragar el siguiente codigo de configuracion en server.js =>
+//agregar el siguiente codigo de configuracion en server.js =>
 
 /*
 
@@ -24,8 +24,7 @@ app.use(
 //agregar el input para imagenes dentro de dicho form =>
 // <input type="file" name="url" accept="image/x-png,image/gif,image/jpeg">
 
-//4  agrega al objeto js del producto la direccion de la imagen (en la funcion de creacion dentro del controller) => 
-//  product.url =req.body.name + req.body.id + ".png" 
+
 
 //4 agregar dentro de la funcion de creacion de producto el siguiente codigo =>
 /*
@@ -37,7 +36,8 @@ app.use(
       })
 */
 
+//5  agrega al objeto js del producto la direccion de la imagen (en la funcion de creacion dentro del controller) => 
+//  product.url =req.body.name + req.body.id + ".png" 
 
-
-//5 no olvides crear la carpeta que va a contener las imagenes en este caso la carpeta "products" dentro de public/img
+//6 no olvides crear la carpeta que va a contener las imagenes en este caso la carpeta "products" dentro de public/img
 
