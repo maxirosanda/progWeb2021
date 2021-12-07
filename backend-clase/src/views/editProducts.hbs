@@ -9,24 +9,25 @@
 </form>
 
 <div class="row">
-{{#each productosparaver}}
+{{#each products}}
 <div class="card m-3" style="width: 18rem;">
   <img src="./img/products/{{url}}" class="card-img-top" alt="...">
   <div class="card-body">
       <form action="/editproductos?_method=PUT" method="post"  enctype="multipart/form-data">
-        <input type="hidden" name="id" value={{id}}>
+        <input type="hidden" name="_id" value={{_id}}>
         <h6>Nombre:</h6>
-        <input name="name"  placeholder={{name}} type="text">
+        <input name="name"  placeholder="{{name}}" type="text">
         <h6>Precio:</h6>
         <input name="price" type="number" placeholder={{price}}>
         <h6>Stock:</h6>
         <input name="stock" type="number" min="1" placeholder={{stock}}>
-         <input type="file" name="url" accept="image/x-png,image/gif,image/jpeg">
+        <input name="url" type="hidden" value="{{url}}">
+         <input type="file" name="imagen" accept="image/x-png,image/gif,image/jpeg">
         <button type="submit">Actualizar</button>
       </form>
 
       <form action="/editproductos?_method=delete" method="post" >
-       <input type="hidden"  name="id"  value={{id}}>
+       <input type="hidden"  name="_id"  value={{_id}}>
         <button type="submit">Borrar</button>
       </form>
   </div>

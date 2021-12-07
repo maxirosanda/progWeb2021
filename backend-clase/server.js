@@ -6,7 +6,7 @@ import routesProducts from './src/routes/routesProducts.js'
 import routesCarts from './src/routes/routesCarts.js'
 import methodOverride from 'method-override'
 import fileUpload from 'express-fileupload'
-
+import { conectarDB } from './config/db.js'
 const app = express()
 
 const __dirname = path.resolve();
@@ -46,7 +46,7 @@ app.engine("hbs", handlebars({
 }));
 app.set('views', path.join(__dirname, 'src/views'))
 app.set('view engine', 'hbs');
-
+conectarDB()
 // servidor
 routesProducts(app)
 routesCarts(app)

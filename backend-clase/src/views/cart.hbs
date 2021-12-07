@@ -6,7 +6,7 @@
 <div class="col-5">
 <h6><b>Nombre Producto :</b> {{name}}   <b>Precio:</b> {{price}}  <b>Cantidad:</b> {{cantidad}}</h6>
 <form action="/carrito?_method=delete" method="post">
-    <input type="hidden" name="id" value={{id}}>
+    <input type="hidden" name="_id" value={{_id}}>
     <button type="submit">Sacar del carrito</button>
 </form>
 </div>

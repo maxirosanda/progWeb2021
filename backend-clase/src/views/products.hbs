@@ -8,7 +8,7 @@
               <h5 class="card-title">{{name}}</h5>
               <p class="card-text">el precio del producto es: {{price}} $ y tiene un stock de: {{stock}}</p>
               <form action="/carrito" method="post">
-                <input type="hidden" name="id" value={{id}}>
+                <input type="hidden" name="idProduct" value={{_id}}>
                 <input type="hidden" name="name" value={{name}}>
                 <input type="hidden" name="price" value={{price}}>
                 <input type="hidden" name="url" value={{url}}>
