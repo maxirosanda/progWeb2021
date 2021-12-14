@@ -1,7 +1,5 @@
 import Cart from '../models/carts.js'
-let carts = [
 
-]
 
 export const viewcart = async (req,res)=>{
   try {
